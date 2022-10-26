@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap');
+/*font-family: 'Krub', sans-serif;*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Krub', sans-serif;
+}
+header{
+    background: url(imagens/fundoHeader.png) #78A1BF ;
+    background-position-y: center;
+    border-bottom: 7px solid #3381BB;
+}
+#nome{
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 2em;
+}
+#imagemTopo{
+    text-align: center;
+}
+#imagemTopo img{
+    border-radius: 10em;
+}
+#menuTopo{
+    max-width: 80%;
+    margin: 1em auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+#menuTopo a{
+   font-size: 1.8em;
+   color: #FFFFFF;
+   transition:0.8s;
+}
+#menuTopo a:hover{
+    color:#1a4564;
+     font-weight: bold;
+}
+#dados{
+    background-color: #F5F5F5;
+    padding: 1.5em;
+}
+#segui{
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+#dados h2{
+    text-align: center;
+    font-size: 2em;
+}
+#escolaridade,#cursos,#proj{
+    background-color: #7BB2D5;
+    color:#F5F5F5;
+    padding: 1.5em;
+    text-align: center;
+}
+#escolaridade h2,#cursos h2,#proj h2{
+    font-size: 2em;
+}
+#escolaridade p,#cursos p,#proj a{
+   font-size: 1.5em;
+   color:#F5F5F5;
+      transition: 0.8s;
+}
+#proj a:hover{
+    color:#1a4564;
+    font-weight: bold;
+}
+#experiencia,#expExtra{
+    background-color: #F5F5F5;
+    padding: 1.5em;
+    text-align: center;
+}
+#experiencia h2,#expExtra h2{
+    font-size: 2em;
+}
+#experiencia p,#expExtra p{
+   font-size: 1.5em;
+
+}
+footer{
+    background-color:  #78A1BF;
+    border-top: 7px solid #3381BB;
+    padding-top:1.5em;
+    color: #F5F5F5;
+    font-size:1.5em;
+}
+#linke{
+    text-align: center;
+}
+#linke img{
+   border-radius: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+#linke img:hover,#linke img:focus, #linke img:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+@media(max-width:500px){
+    header{
+        background: none;
+        background-color:#78A1BF;
+    }
+    #nome{
+        font-size: 1.3em;
+    }
+    #menuTopo{
+        flex-direction: column;
+    }
+}
